@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>WebView</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage,lightning__HomePage,lightningCommunity__Default">
+            <property name="variant" type="String" label="ヘッダタイプ" description="ヘッダタイプを「base」「narrow」で指定してください" />
+            <property name="title" type="String" label="タイトル" description="タイトルを指定してください" />
+            <property name="icon" type="String" label="アイコン" description="アイコンを指定してください - https://lightningdesignsystem.com/icons/" />
+            <property name="height" type="Integer" label="高さ" description="高さpxで指定してください" />
+            <property name="url" type="String" label="URL" description="表示するURLを指定してください" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,6 @@
+<template>
+    <lightning-card variant={variant} title={title} icon-name={icon}>
+        <lightning-button-icon icon-name="utility:new_window" alternative-text="表示" slot="actions" onclick={handleOpen}></lightning-button-icon>
+        <div class="webview-container" lwc:dom="manual"></div>
+    </lightning-card>
+</template>
